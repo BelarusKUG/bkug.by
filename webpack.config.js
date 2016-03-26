@@ -21,7 +21,7 @@ var config = {
             loader: 'babel'
         }, {
             test: /\.scss$/,
-            loader: 'style!css?modules&localIdentName=[name]_[local]!postcss!sass'
+            loader: 'style!css!postcss!sass'
         }, {
             test: /\.(png|jpg|gif|svg)$/,
             loader: "url?limit=8192"
