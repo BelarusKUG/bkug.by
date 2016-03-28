@@ -1,0 +1,85 @@
+$width: 5rem;
+/* Sidebar masthead */
+.masthead {
+  color: $accent-contrast;
+  background-color: $accent;
+}
+
+.masthead-inner {
+  padding: 20px;
+}
+
+/* Masthead content */
+.main-title {
+  margin-top: 0;
+  font-family: 'Righteous', cursive;
+  line-height: 1;
+  text-align: center;
+  opacity: .9;
+  &__belarus {
+    font-size: $width * 0.75348;
+  }
+  &__kotlin {
+    font-size: $width;
+  }
+  &__user-group {
+    font-size: $width * 0.50862;
+  }
+}
+
+.kotlin-cat {
+  max-width: 100%;
+  margin: 3rem 0 0 0;
+}
+
+
+.masthead .lead {
+  margin-bottom: 0;
+}
+
+/* Footer area of masthead */
+.colophon {
+  @media (min-width: 990px) {
+    margin-top: 1rem;
+  }
+  &-links {
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+    color: rgba(#000, 0.45);
+    text-align: center;
+    text-transform: uppercase;
+    a {
+      color: rgba(#000, 0.45);
+      &:hover {
+        text-decoration: none;
+        color: rgba(#000, 0.35);
+      }
+    }
+  }
+}
+
+/* Responsive masthead */
+@media (min-width: 768px) {
+  .masthead-inner {
+    padding: 40px;
+  }
+}
+
+@media (min-width: 990px) {
+  /* Fix the masthead to the side for impact and awesomeness */
+  .masthead {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 25%;
+    margin-bottom: 0;
+  }
+  .masthead-inner {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+}

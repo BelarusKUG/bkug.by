@@ -96,8 +96,6 @@ pre {
   padding: 15px 20px;
   font-size: 16px;
   line-height: 1.4;
-  white-space: pre;
-  white-space: pre-wrap;
   word-break: break-all;
   word-wrap: break-word;
   background-color: #f9f9f9;
@@ -173,77 +171,6 @@ a {
 a:hover,
 a:focus {
   text-decoration: underline;
-  }
-
-
-/*
- * Masthead
- *
- * Sidebar banner for housing site name, intro, and colophon (footer).
- */
-
-/* Sidebar masthead */
-.masthead {
-  color: $accent-contrast;
-  background-color: $accent;
-  }
-.masthead-inner {
-  padding: 20px;
-  }
-
-/* Masthead content */
-.masthead h1 {
-  margin-top: 0;
-  font-family: "Abril Fatface";
-  }
-.masthead .lead {
-  margin-bottom: 0;
-  }
-.masthead a {
-  color: #fff;
-  }
-
-/* Footer area of masthead */
-.colophon {
-  margin-top: 20px;
-  color: rgba(255,255,255,.5);
-  }
-.colophon-links {
-  padding-left: 0;
-  list-style: none;
-  }
-.colophon-links li {
-  color: inherit;
-  }
-
-/* Responsive masthead */
-@media (min-width: 768px) {
-  .masthead-inner {
-    padding: 40px;
-    }
-  }
-@media (min-width: 990px) {
-  /* Fix the masthead to the side for impact and awesomeness */
-  .masthead {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 25%;
-    margin-bottom: 0;
-    }
-  .masthead-inner {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    }
-  .masthead h1 {
-    font-size: 64px;
-    }
-  .colophon {
-    margin-top: 40px;
-    }
   }
 
 
@@ -456,3 +383,5 @@ a:focus {
 .theme-base-0f .related-posts li a:hover {
   color: #8f5536;
   }
+
+@import "styles/masterhead";
