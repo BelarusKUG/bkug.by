@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, IndexRoute, Link, hashHistory } from 'react-router'
+import { Router, Redirect, Route, IndexRoute, Link, hashHistory } from 'react-router'
 import Speakers from './speakers/speakers.jsx';
 import Contacts from './contacts/contacts.jsx';
 import Events from './events/events.jsx';
@@ -18,6 +18,7 @@ function main() {
                 <Route path="speakers" component={Speakers} />
                 <Route path="contacts" component={Contacts} />
             </Route>
+            <Redirect from="/*" to="/events"/>
         </Router>
     ), document.getElementById('root'));
 }
