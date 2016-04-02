@@ -6,6 +6,7 @@
   &__img {
     width: 100%;
     display: block;
+    margin: 0;
   }
 
   &__item {
@@ -13,9 +14,11 @@
     display: block;
     break-inside: avoid;
   }
+
   &__container {
     column-count: auto;
-    column-gap: 1rem;
+    column-gap: 0;
     column-width: 11rem;
+
   }
 }
