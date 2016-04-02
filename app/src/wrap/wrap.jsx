@@ -6,9 +6,7 @@ export default class Wrap extends React.Component {
         return (
             <div>
                 <Menu/>
-                <div className="content container">
-                    {this.props.children}
-                </div>
+                {this.props.children}
             </div>
         );
     }
