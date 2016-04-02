@@ -20,6 +20,9 @@ var config = {
             exclude: /node_modules/,
             loader: 'babel'
         }, {
+            test: /\.css$/,
+            loader: 'style!css!postcss'
+        }, {
             test: /\.scss$/,
             loader: 'style!css!postcss!sass'
         }, {

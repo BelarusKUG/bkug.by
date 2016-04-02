@@ -1,6 +1,6 @@
 import React from 'react';
-import Menu from '../menu/menu.jsx';
-import Gallery from '../gallery/gallery.jsx';
+import Menu from '../components/menu/menu.jsx';
+import Gallery from '../components/gallery/gallery.jsx';
 
 export default class Page extends React.Component {
     render() {

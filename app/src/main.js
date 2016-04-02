@@ -1,11 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Page from './page/page.jsx';
+import { Router, Route, IndexRoute, Link, hashHistory } from 'react-router'
+import Speakers from './speakers/speakers.jsx';
+import Contacts from './contacts/contacts.jsx';
+import Events from './events/events.jsx';
+import Wrap from './wrap/wrap.jsx';
+import Home from './home/home.jsx';
+import 'normalize.css/normalize.css'
 import './style.scss'
-import 'css!../../node_modules/normalize.css/normalize.css' // TODO: WHY?!
 
 function main() {
-    ReactDOM.render(<Page/>, document.getElementById('root'));
+    ReactDOM.render((
+        <Router history={hashHistory}>
+            <Route path="/" component={Wrap}>
+                <IndexRoute component={Home} />
+                <Route path="events" component={Events} />
+                <Route path="speakers" component={Speakers} />
+                <Route path="contacts" component={Contacts} />
+            </Route>
+        </Router>
+    ), document.getElementById('root'));
 }
 
 main();

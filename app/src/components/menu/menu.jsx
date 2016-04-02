@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router'
 
 export default class Menu extends React.Component {
   render() {
@@ -13,13 +14,19 @@ export default class Menu extends React.Component {
           <div className="colophon">
             <ul className="colophon-links">
               <li>
-                <a href="#">Events</a>
+                <Link activeClassName="colophon-links-active" to="/events">
+                  Events
+                </Link>
               </li>
               <li>
-                <a href="#">Speakers</a>
+                <Link activeClassName="colophon-links-active" to="/speakers">
+                  Speakers
+                </Link>
               </li>
               <li>
-                <a href="#">Contacts</a>
+                <Link activeClassName="colophon-links-active" to="/contacts">
+                  Contacts
+                </Link>
               </li>
             </ul>
           </div>
