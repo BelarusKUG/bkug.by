@@ -1,0 +1,21 @@
+.c-gallery {
+  box-sizing: border-box;
+  overflow: hidden;
+
+
+  &__img {
+    width: 100%;
+    display: block;
+  }
+
+  &__item {
+    position: relative; //for demo
+    display: block;
+    break-inside: avoid;
+  }
+  &__container {
+    column-count: auto;
+    column-gap: 1rem;
+    column-width: 11rem;
+  }
+}

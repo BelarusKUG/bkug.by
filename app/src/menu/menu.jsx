@@ -10,7 +10,6 @@ export default class Menu extends React.Component {
             <span className="main-title__kotlin">Kotlin </span>
             <span className="main-title__user-group">User Group</span>
           </h1>
-          <img src={require("./kotlin_cat.svg")} className="kotlin-cat"/>
           <div className="colophon">
             <ul className="colophon-links">
               <li>
@@ -25,6 +24,7 @@ export default class Menu extends React.Component {
             </ul>
           </div>
 
+          <img src={require("./kotlin_cat.svg")} className="kotlin-cat"/>
         </div>
       </header>
     );

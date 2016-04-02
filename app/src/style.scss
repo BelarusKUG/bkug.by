@@ -19,6 +19,16 @@ body {
   color: #454441;
   background-color: #fff;
   }
+
+.clearfix {
+  &:before,
+  &:after {
+    content:"";
+    display: table;
+    clear: both;
+  }
+}
+
 @media (min-width: 990px) {
   body {
     font-size: 18px;
@@ -385,3 +395,4 @@ a:focus {
   }
 
 @import "styles/masterhead";
+@import "styles/gallery";
