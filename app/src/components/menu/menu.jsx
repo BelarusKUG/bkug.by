@@ -15,22 +15,22 @@ export default class Menu extends React.Component {
             <ul className="colophon-links">
               <li>
                 <Link activeClassName="colophon-links-active" to="/">
-                  Home
+                  Главная
                 </Link>
               </li>
               <li>
                 <Link activeClassName="colophon-links-active" to="/events">
-                  Events
+                  События
                 </Link>
               </li>
               <li>
                 <Link activeClassName="colophon-links-active" to="/speakers">
-                  Speakers
+                  Докладчики
                 </Link>
               </li>
               <li>
                 <Link activeClassName="colophon-links-active" to="/contacts">
-                  Contacts
+                  Контакты
                 </Link>
               </li>
             </ul>
