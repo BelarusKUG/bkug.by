@@ -1,0 +1,22 @@
+.content {
+  &__header {
+    margin: 0 0 10px;
+    line-height: 1.25;
+    text-rendering: optimizeLegibility;
+    font-family: Verdana, sans-serif;
+    color:$blue;
+
+    &--h1 {
+      font-size: 1.6rem;
+    }
+    &--h2 {
+      font-size: 1.5rem;
+    }
+    &--h3 {
+      font-size: 1.4rem;
+    }
+  }
+  &__text {
+
+  }
+}

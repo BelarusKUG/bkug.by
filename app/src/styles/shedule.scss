@@ -1,0 +1,31 @@
+.schedule {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  &__item {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: row;
+    flex:1;
+
+    &-time {
+      width: 4rem;
+    }
+    &-point {
+      width: 5px;
+      height: 5px;
+      background-color: white;
+      border: 3px solid $main;
+      font-size: 1px;
+      line-height: 1px;
+      border-radius: 10px;
+    }
+    &-topic {
+      font-weight: bold;
+    }
+    &-speaker {
+      color: $g-light;
+    }
+  }
+}

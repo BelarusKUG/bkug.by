@@ -34,33 +34,6 @@ body {
     font-size: 18px;
     }
   }
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 0 0 10px;
-  font-weight: 600;
-  line-height: 1.25;
-  text-rendering: optimizeLegibility;
-  }
-h1 {
-  font-size: 40px;
-  }
-h2 {
-  margin-top: 20px;
-  font-size: 32px;
-  }
-h3 {
-  margin-top: 24px;
-  font-size: 24px;
-  }
-h4, h5, h6 {
-  margin-top: 16px;
-  font-size: 16px;
-  }
-
-p {
-  margin: 0 0 15px;
-  }
-
 ul, ol {
   margin-bottom: 15px;
   }
@@ -394,5 +367,8 @@ a:focus {
   color: #8f5536;
   }
 
+@import "styles/variable";
 @import "styles/masterhead";
 @import "styles/gallery";
+@import "styles/typography";
+@import "styles/shedule";
