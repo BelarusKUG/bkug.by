@@ -31,23 +31,16 @@ export default class Home extends React.Component {
                     </p>
                 </sectin>
 
-                <h3>Программа:</h3>
+                <sectin className="content__block">
+                    <ul>
+                        <li>19:00 - 20:00 – Антон Руткевич сделает введение в язык и расскажет об основных особенностях языка.</li>
+                        <li>20:00 - 21:00 – Руслан Ибрагимов расскажет, как использовать Котлин на бэкенеде на примере
+                            Spring приложения, а также рассмотрит стандартную библиотеку Котлин.
+                        </li>
+                    </ul>
+                </sectin>  
 
-                <ul>
-                    <li>19:00 - 20:00 – Антон Руткевич сделает введение в язык и расскажет об основных особенностях языка.</li>
-                    <li>20:00 - 21:00 – Руслан Ибрагимов расскажет, как использовать Котлин на бэкенеде на примере
-                        Spring приложения, а также рассмотрит стандартную библиотеку Котлин.
-                    </li>
-                </ul>
-
-                <p>Для участия во встрече необходима предварительная регистрация
-                    (это поможет нам подготовить необходимое количество печенек :) )</p>
-
-                <p>Место проведения: ул. Октябрьская, 16А – EventSpace. Парковка и вход через ул. Октябрьскую, 10б.</p>
-
-                <h2>Карта проезда</h2>
-
-                <div id="map" style={{width: '600px', height: '400px'}}></div>
+                
                 <sectin className="content__block">
                     <h3 className="content__header content__header--h3">Программа:</h3>
     
@@ -85,8 +78,8 @@ export default class Home extends React.Component {
 
                 <sectin className="content__block">
                     <h2 className="content__header content__header--h2">Карта проезда</h2>
-    
-                    <div id="YMapsEvent"></div>
+                    
+                    <div id="map" style={{width: '600px', height: '400px'}}></div>
                 </sectin>
             </div>
         );
