@@ -1,6 +1,10 @@
 import React from 'react';
 
 export default class Home extends React.Component {
+    componentDidMount() {
+        RenderMapEvent();
+    }
+
     render() {
         return (
             <div className="content container">
@@ -32,7 +36,6 @@ export default class Home extends React.Component {
                 <h2>Карта проезда</h2>
 
                 <div id="YMapsEvent"></div>
-
             </div>
         );
     }
