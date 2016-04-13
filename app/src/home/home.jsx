@@ -32,16 +32,6 @@ export default class Home extends React.Component {
                 </sectin>
 
                 <sectin className="content__block">
-                    <ul>
-                        <li>19:00 - 20:00 – Антон Руткевич сделает введение в язык и расскажет об основных особенностях языка.</li>
-                        <li>20:00 - 21:00 – Руслан Ибрагимов расскажет, как использовать Котлин на бэкенеде на примере
-                            Spring приложения, а также рассмотрит стандартную библиотеку Котлин.
-                        </li>
-                    </ul>
-                </sectin>  
-
-                
-                <sectin className="content__block">
                     <h3 className="content__header content__header--h3">Программа:</h3>
     
                     <ul className="schedule">
@@ -74,6 +64,33 @@ export default class Home extends React.Component {
                         (это поможет нам подготовить необходимое количество печенек :) )</p>
     
                     <p className="content__text">Место проведения: ул. Октябрьская, 16А – EventSpace. Парковка и вход через ул. Октябрьскую, 10б.</p>
+                </sectin>
+
+                <sectin className="content__block">
+                    <h3 className="content__header content__header--h3">Выступают:</h3>
+                    <ul className="speaker">
+                        <li className="speaker__item">
+                            <picture className="speaker__item-img">
+                                <img className="c-speaker__item-img" src="http://placehold.it/200x200/E8117F/ffffff" alt="MDN"/>
+                            </picture>
+                            <div className="c-speaker__item-info">
+                                <h4 className="c-speaker__item-name">Антон Руткевич</h4>
+                                <h5 className="schedule__item-position">Software Engineer Juno Inc.</h5>
+                                <small className="schedule__item-overview">Сделает введение в язык и расскажет об основных особенностях языка</small>
+                            </div>
+                        </li>
+                        <li className="speaker__item">
+                            <picture className="speaker__item-img">
+                                <img className="c-speaker__item-img" src="http://placehold.it/200x200/E8117F/ffffff" alt="MDN"/>
+                            </picture>
+                            <div className="c-speaker__item-info">
+                                <h4 className="c-speaker__item-name">Руслан Ибрагимов</h4>
+                                <h5 className="schedule__item-position">Software Engineer Itransition</h5>
+                                <small className="schedule__item-overview">Расскажет, как использовать Котлин на бэкенеде на примере
+                                    Spring приложения, а также рассмотрит стандартную библиотеку Котлин.</small>
+                            </div>
+                        </li>
+                    </ul>
                 </sectin>
 
                 <sectin className="content__block">
