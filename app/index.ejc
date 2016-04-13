@@ -10,23 +10,6 @@
 <body>
   <div id="root">
   </div>
-  <script src='//api-maps.yandex.ru/2.0/?load=package.full&amp;mode=debug&amp;lang=ru-RU' type='text/javascript'></script>
-  <script>
-        function RenderMapEvent() {
-            var e = 'Минск, ул. Октябрьская, 16А  EventSpace.by';
-                // t = 53.8904, i = 27.5718;
-            if (!t || !i) var t = 53.904098, i = 27.547099;
-            ymaps.ready(function () {
-                var a = new ymaps.Map("YMapsEvent", {center: [t, i], zoom: 17, type: "yandex#publicMap"});
-                a.controls.add("mapTools").add("zoomControl").add("typeSelector");
-                var n = new ymaps.Placemark([t, i], {iconContent: e}, {
-                    preset: "twirl#blueStretchyIcon",
-                    balloonCloseButton: !1,
-                    hideIconOnBalloonOpen: !1
-                });
-                a.geoObjects.add(n)
-            })
-        }
-  </script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 </body>
 </html>

@@ -2,7 +2,20 @@ import React from 'react';
 
 export default class Home extends React.Component {
     componentDidMount() {
-        RenderMapEvent();
+        function initMap() {
+            var map = new ymaps.Map("map", {
+                center: [53.8904, 27.5718],
+                zoom: 17
+            });
+
+            space = new ymaps.Placemark([53.8904, 27.5718], {
+                hintContent: 'EventSpace', balloonContent: 'Минск, ул. Октябрьская, 16А  EventSpace.by'
+            });
+
+            map.geoObjects.add(space);
+        }
+
+        ymaps.ready(initMap);
     }
 
     render() {
@@ -35,7 +48,7 @@ export default class Home extends React.Component {
 
                 <h2>Карта проезда</h2>
 
-                <div id="YMapsEvent"></div>
+                <div id="map" style={{width: '600px', height: '400px'}}></div>
             </div>
         );
     }
