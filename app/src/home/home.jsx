@@ -99,23 +99,23 @@ export default class Home extends React.Component {
                     <h3 className="content__header content__header--h3">Выступают:</h3>
                     <ul className="speaker">
                         <li className="speaker__item">
-                            <picture className="speaker__item-img">
-                                <img className="c-speaker__item-img" src="http://placehold.it/200x200/E8117F/ffffff" alt="MDN"/>
+                            <picture className="speaker__item-pic">
+                                <img className="speaker__item-img" src={require('../speakers/photos/anton_rutkevich.jpg')} alt="MDN"/>
                             </picture>
-                            <div className="c-speaker__item-info">
-                                <h4 className="c-speaker__item-name">Антон Руткевич</h4>
-                                <h5 className="schedule__item-position">Software Engineer Juno Inc.</h5>
-                                <small className="schedule__item-overview">Сделает введение в язык и расскажет об основных особенностях языка</small>
+                            <div className="speaker__item-info">
+                                <h4 className="speaker__item-name">Антон Руткевич</h4>
+                                <h5 className="speaker__item-position">Software Engineer Juno Inc.</h5>
+                                <small className="speaker__item-overview">Сделает введение в язык и расскажет об основных особенностях языка</small>
                             </div>
                         </li>
                         <li className="speaker__item">
-                            <picture className="speaker__item-img">
-                                <img className="c-speaker__item-img" src="http://placehold.it/200x200/E8117F/ffffff" alt="MDN"/>
+                            <picture className="speaker__item-pic">
+                                <img className="speaker__item-img" src={require('../speakers/photos/ruslan_ibragimov.jpg')} alt="MDN"/>
                             </picture>
-                            <div className="c-speaker__item-info">
-                                <h4 className="c-speaker__item-name">Руслан Ибрагимов</h4>
-                                <h5 className="schedule__item-position">Software Engineer Itransition</h5>
-                                <small className="schedule__item-overview">Расскажет, как использовать Котлин на бэкенеде на примере
+                            <div className="speaker__item-info">
+                                <h4 className="speaker__item-name">Руслан Ибрагимов</h4>
+                                <h5 className="speaker__item-position">Software Engineer Itransition</h5>
+                                <small className="speaker__item-overview">Расскажет, как использовать Котлин на бэкенеде на примере
                                     Spring приложения, а также рассмотрит стандартную библиотеку Котлин.</small>
                             </div>
                         </li>

@@ -1,5 +1,5 @@
 .speaker {
-  $width: 8rem;
+  $point: 4rem;
 
   list-style: none;
   padding: 0;
@@ -13,8 +13,20 @@
     flex-direction: row;
     flex:1;
 
+    &-pic {
+      width: $point *2;
+      min-width: $point *2;
+      border-radius: $point;
+      overflow: hidden;
+      position: relative;
+      height: $point *2;
+      margin-right: $point / 2;
+    }
     &-img {
-
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
     }
     &-info {
 
@@ -23,13 +35,12 @@
       margin: 0;
       font-weight: bold;
       color: $main;
-
     }
     &-position {
-
+      margin: 0;
     }
     &-overview {
-
+      //margin: 0;
     }
   }
 }
