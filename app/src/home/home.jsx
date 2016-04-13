@@ -4,15 +4,44 @@ export default class Home extends React.Component {
     componentDidMount() {
         function initMap() {
             var map = new ymaps.Map("map", {
-                center: [53.8904, 27.5718],
+                center: [53.890611, 27.567859],
                 zoom: 17
             });
 
-            space = new ymaps.Placemark([53.8904, 27.5718], {
-                hintContent: 'EventSpace', balloonContent: 'Минск, ул. Октябрьская, 16А  EventSpace.by'
+            const space = new ymaps.Placemark([53.890025, 27.569422], {
+                hintContent: 'EventSpace',
+                iconContent: 'EventSpace'
+            }, {
+                preset: "islands#blueStretchyIcon"
+            });
+
+            const address = new ymaps.Placemark([53.890816, 27.567568], {
+                hintContent: 'ул. Октябрьская, 10б',
+                iconContent: 'ул. Октябрьская, 10б'
+            }, {
+                preset: "islands#blueStretchyIcon"
+            });
+
+            const fence = new ymaps.Placemark([53.890527, 27.567618], {
+                hintContent: 'Забор с домофоном',
+                iconContent: 'Забор с домофоном'
+            }, {
+                preset: "islands#blueStretchyIcon"
+            });
+
+            var polyline = new ymaps.Polyline([
+                [53.890527, 27.567618], [53.890012, 27.569253], [53.890025, 27.569422]
+            ], {
+                hintContent: "Road to EventSpace"
+            }, {
+                strokeColor: '#0095d5',
+                strokeWidth: 5
             });
 
             map.geoObjects.add(space);
+            map.geoObjects.add(fence);
+            map.geoObjects.add(address);
+            map.geoObjects.add(polyline);
         }
 
         ymaps.ready(initMap);
