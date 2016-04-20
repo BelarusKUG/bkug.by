@@ -1,3 +1,6 @@
+$accent: #f88909;
+$accent-contrast: #fff;
+
 $blue: #0095d5;
 $main: #f88909;
 $g-light: #ccc;
@@ -5,3 +8,6 @@ $g-lighten: lighten($g-light, 5%);
 $g: darken($g-light, 5%);
 $g-dark: darken($g, 10%);
 $g-darken: darken($g-dark, 10%);
+
+// breakpoints
+$media-sm: 1100px;

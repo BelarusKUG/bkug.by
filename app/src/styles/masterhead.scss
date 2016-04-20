@@ -41,7 +41,7 @@ $width: 5rem;
 
 /* Footer area of masthead */
 .colophon {
-  @media (min-width: 990px) {
+  @media (min-width: $media-sm) {
     margin-top: 2rem;
   }
   &-links {
@@ -69,7 +69,7 @@ $width: 5rem;
   }
 }
 
-@media (min-width: 990px) {
+@media (min-width: $media-sm) {
   /* Fix the masthead to the side for impact and awesomeness */
   .masthead {
     position: fixed;

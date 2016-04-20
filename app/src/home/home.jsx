@@ -49,83 +49,86 @@ export default class Home extends React.Component {
 
     render() {
         return (
-            <div className="content container">
-                <sectin className="content__block">
-                    <h2 className="content__header content__header--h2">BKUG Meetup #2</h2>
-    
-                    <p className="content__text">
-                        12 мая пройдет второй митап Belarus Kotlin User Group который будет посвящен Dependency Injection
-                        и тестированию в Kotlin.
-    
-                    </p>
-                </sectin>
+            <div className="content">
+                <div className="container">
+                    <sectin className="content__block">
+                        <h2 className="content__header content__header--h2">BKUG Meetup #2</h2>
 
-                <sectin className="content__block">
-                    <h3 className="content__header content__header--h3">Программа:</h3>
-    
-                    <ul className="schedule">
-                        <li className="schedule__item">
-                            <span className="schedule__item-time">19:00 - 20:00</span>
-                            <i className="schedule__item-point">&nbsp;</i>
-                            <div className="schedule__item-info">
-                                <h4  className="schedule__item-topic">Введение в язык и основные особенности языка</h4>
-                                <small className="schedule__item-speaker">Антон Руткевич</small>
-                            </div>
-                        </li>
-                        <li className="schedule__item">
-                            <span className="schedule__item-time">20:00 - 20:15</span>
-                            <i className="schedule__item-point schedule__item-point--pause">&nbsp;</i>
-                            <div className="schedule__item-info">
-                                <h4 className="schedule__item-topic schedule__item-topic--pause">Кофе пауза</h4>
-                            </div>
-                        </li>
-                        <li className="schedule__item">
-                            <span className="schedule__item-time">20:15 - 21:00</span>
-                            <i className="schedule__item-point">&nbsp;</i>
-                            <div className="schedule__item-info">
-                                <h4  className="schedule__item-topic">Котлин на бэкенеде на примере Spring</h4>
-                                <small className="schedule__item-speaker">Руслан Ибрагимов</small>
-                            </div>
-                        </li>                    
-                    </ul>
-    
-                    <p className="content__text">Для участия во встрече необходима предварительная регистрация
-                        (это поможет нам подготовить необходимое количество печенек :) )</p>
-    
-                    <p className="content__text">Место проведения: ул. Октябрьская, 16А – EventSpace. Парковка и вход через ул. Октябрьскую, 10б.</p>
-                </sectin>
+                        <p className="content__text">
+                            12 мая пройдет второй митап Belarus Kotlin User Group который будет посвящен Dependency Injection
+                            и тестированию в Kotlin.
 
-                <sectin className="content__block">
-                    <h3 className="content__header content__header--h3">Выступают:</h3>
-                    <ul className="speaker">
-                        <li className="speaker__item">
-                            <picture className="speaker__item-pic">
-                                <img className="speaker__item-img" src={require('../speakers/photos/anton_rutkevich.jpg')} alt="MDN"/>
-                            </picture>
-                            <div className="speaker__item-info">
-                                <h4 className="speaker__item-name">Антон Руткевич</h4>
-                                <h5 className="speaker__item-position">Software Engineer Juno Inc.</h5>
-                                <small className="speaker__item-overview">Сделает введение в язык и расскажет об основных особенностях языка</small>
-                            </div>
-                        </li>
-                        <li className="speaker__item">
-                            <picture className="speaker__item-pic">
-                                <img className="speaker__item-img" src={require('../speakers/photos/ruslan_ibragimov.jpg')} alt="MDN"/>
-                            </picture>
-                            <div className="speaker__item-info">
-                                <h4 className="speaker__item-name">Руслан Ибрагимов</h4>
-                                <h5 className="speaker__item-position">Software Engineer Itransition</h5>
-                                <small className="speaker__item-overview">Расскажет, как использовать Котлин на бэкенеде на примере
-                                    Spring приложения, а также рассмотрит стандартную библиотеку Котлин.</small>
-                            </div>
-                        </li>
-                    </ul>
-                </sectin>
+                        </p>
+                    </sectin>
 
-                <sectin className="content__block">
-                    <h2 className="content__header content__header--h2">Карта проезда</h2>
+                    <sectin className="content__block">
+                        <h3 className="content__header content__header--h3">Программа:</h3>
+
+                        <ul className="schedule">
+                            <li className="schedule__item">
+                                <span className="schedule__item-time">19:00 - 20:00</span>
+                                <i className="schedule__item-point">&nbsp;</i>
+                                <div className="schedule__item-info">
+                                    <h4  className="schedule__item-topic">Введение в язык и основные особенности языка</h4>
+                                    <small className="schedule__item-speaker">Антон Руткевич</small>
+                                </div>
+                            </li>
+                            <li className="schedule__item">
+                                <span className="schedule__item-time">20:00 - 20:15</span>
+                                <i className="schedule__item-point schedule__item-point--pause">&nbsp;</i>
+                                <div className="schedule__item-info">
+                                    <h4 className="schedule__item-topic schedule__item-topic--pause">Кофе пауза</h4>
+                                </div>
+                            </li>
+                            <li className="schedule__item">
+                                <span className="schedule__item-time">20:15 - 21:00</span>
+                                <i className="schedule__item-point">&nbsp;</i>
+                                <div className="schedule__item-info">
+                                    <h4  className="schedule__item-topic">Котлин на бэкенеде на примере Spring</h4>
+                                    <small className="schedule__item-speaker">Руслан Ибрагимов</small>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <p className="content__text">Для участия во встрече необходима предварительная регистрация
+                            (это поможет нам подготовить необходимое количество печенек :) )</p>
+
+                        <p className="content__text">Место проведения: ул. Октябрьская, 16А – EventSpace. Парковка и вход через ул. Октябрьскую, 10б.</p>
+                    </sectin>
+
+                    <sectin className="content__block">
+                        <h3 className="content__header content__header--h3">Выступают:</h3>
+                        <ul className="speaker">
+                            <li className="speaker__item">
+                                <picture className="speaker__item-pic">
+                                    <img className="speaker__item-img" src={require('../speakers/photos/anton_rutkevich.jpg')} alt="MDN"/>
+                                </picture>
+                                <div className="speaker__item-info">
+                                    <h4 className="speaker__item-name">Антон Руткевич</h4>
+                                    <h5 className="speaker__item-position">Software Engineer Juno Inc.</h5>
+                                    <small className="speaker__item-overview">Сделает введение в язык и расскажет об основных особенностях языка</small>
+                                </div>
+                            </li>
+                            <li className="speaker__item">
+                                <picture className="speaker__item-pic">
+                                    <img className="speaker__item-img" src={require('../speakers/photos/ruslan_ibragimov.jpg')} alt="MDN"/>
+                                </picture>
+                                <div className="speaker__item-info">
+                                    <h4 className="speaker__item-name">Руслан Ибрагимов</h4>
+                                    <h5 className="speaker__item-position">Software Engineer Itransition</h5>
+                                    <small className="speaker__item-overview">Расскажет, как использовать Котлин на бэкенеде на примере
+                                        Spring приложения, а также рассмотрит стандартную библиотеку Котлин.</small>
+                                </div>
+                            </li>
+                        </ul>
+                    </sectin>
+
                     
-                    <div id="map" style={{width: '600px', height: '400px'}}></div>
+                </div>
+                <sectin className="content__block map">
+                    <h2 className="content__header content__header--h2">Карта проезда</h2>
+    
+                    <div id="map" className="map__block" style={{height: '400px'}}></div>
                 </sectin>
             </div>
         );
