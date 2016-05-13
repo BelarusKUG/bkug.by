@@ -48,11 +48,13 @@ export default class Home extends React.Component {
     }
 
     render() {
+        const meetup = this.props.data.meetups[0];
+
         return (
             <div className="content">
                 <div className="container">
                     <sectin className="content__block">
-                        <h2 className="content__header content__header--h2">BKUG Meetup #2</h2>
+                        <h2 className="content__header content__header--h2">{meetup.title}</h2>
 
                         <p className="content__text">
                             12 мая пройдет второй митап Belarus Kotlin User Group который будет посвящен Dependency Injection

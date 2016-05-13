@@ -1,6 +1,7 @@
 $width: 5rem;
 /* Sidebar masthead */
 .masthead {
+  z-index: 1;
   color: $accent-contrast;
   background-color: $accent;
 }

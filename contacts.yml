@@ -1,0 +1,8 @@
+links:
+  - type: youtube
+    url: https:://youtube.com/
+  - type: gitter
+    url: https://gitter.im/JavaBy/Kotlin
+drivers:
+  - name: Ruslan Ibragimov
+    email: ruslan@ibragimov.by
