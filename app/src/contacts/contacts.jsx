@@ -2,36 +2,26 @@ import React from 'react';
 
 export default class Contacts extends React.Component {
     render() {
+        const links = this.props.data.contacts.links;
+        const drivers = this.props.data.contacts.drivers;
+
         return (
             <div className="content container">
                 <h1>Contacts</h1>
 
                 <h2>Наши ссылочки</h2>
-
                 <ul>
-                    <li><a>Youtube channel</a></li>
-                    <li><a>Gitter Chat</a></li>
+                    {links.map((link, idx) => {
+                        return <li key={idx}><a href={link.url}>{link.text}</a></li>
+                    })}
                 </ul>
 
                 <h2>Драйверы сообщества</h2>
 
                 <ul>
-                    <li>
-                        <p>Руслан Ибрагимов</p>
-                        <p><a href="mailto:ruslan@ibragimov.by">ruslan@ibragimov.by</a></p>
-                    </li>
-                    <li>
-                        <p>Руслан Ибрагимов</p>
-                        <p><a href="mailto:ruslan@ibragimov.by">ruslan@ibragimov.by</a></p>
-                    </li>
-                    <li>
-                        <p>Руслан Ибрагимов</p>
-                        <p><a href="mailto:ruslan@ibragimov.by">ruslan@ibragimov.by</a></p>
-                    </li>
-                    <li>
-                        <p>Руслан Ибрагимов</p>
-                        <p><a href="mailto:ruslan@ibragimov.by">ruslan@ibragimov.by</a></p>
-                    </li>
+                    {drivers.map((driver, idx) => {
+                        return <li key={idx}><a href={driver.url}>{driver.text}</a></li>
+                    })}
                 </ul>
             </div>
         );
