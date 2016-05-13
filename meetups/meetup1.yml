@@ -10,14 +10,16 @@ schedule:
   - name: Антон Руткевич сделает введение в язык и расскажет об основных особенностях языка.
     type: speech
     youtube: https://www.youtube.com/watch?v=4gv1pZMg4r8
-    start: 19:00
-    end: 20:00
+    author: anton_rutkevich
+    start: '19:00'
+    end: '20:00'
   - name: Кофе пауза
     type: break
-    start: 19:00
-    end: 20:00
+    start: '19:00'
+    end: '20:00'
   - name: Руслан Ибрагимов расскажет, как использовать Котлин на бэкенеде на примере Spring приложения, а также рассмотрит стандартную библиотеку Котлин.
     type: speech
+    authir: ruslan_ibragimov
     youtube: https://www.youtube.com/watch?v=zpIJTUXtj0A
-    start: 21:00
-    end: 20:00
+    start: '21:00'
+    end: '20:00'

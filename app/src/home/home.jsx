@@ -1,5 +1,18 @@
 import React from 'react';
 
+const schedule = part => {
+    return (
+        <li className="schedule__item">
+            <span className="schedule__item-time">{part.start} - {part.end}</span>
+            <i className="schedule__item-point">&nbsp;</i>
+            <div className="schedule__item-info">
+                <h4  className="schedule__item-topic">Введение в язык и основные особенности языка</h4>
+                <small className="schedule__item-speaker">{getAuthor()}</small>
+            </div>
+        </li>
+    )
+};
+
 export default class Home extends React.Component {
     componentDidMount() {
         function initMap() {
@@ -57,9 +70,7 @@ export default class Home extends React.Component {
                         <h2 className="content__header content__header--h2">{meetup.title}</h2>
 
                         <p className="content__text">
-                            12 мая пройдет второй митап Belarus Kotlin User Group который будет посвящен Dependency Injection
-                            и тестированию в Kotlin.
-
+                            {meetup.description}
                         </p>
                     </sectin>
 
@@ -67,14 +78,7 @@ export default class Home extends React.Component {
                         <h3 className="content__header content__header--h3">Программа:</h3>
 
                         <ul className="schedule">
-                            <li className="schedule__item">
-                                <span className="schedule__item-time">19:00 - 20:00</span>
-                                <i className="schedule__item-point">&nbsp;</i>
-                                <div className="schedule__item-info">
-                                    <h4  className="schedule__item-topic">Введение в язык и основные особенности языка</h4>
-                                    <small className="schedule__item-speaker">Антон Руткевич</small>
-                                </div>
-                            </li>
+                            {meetup.schedule.map(it => schedule(it))}
                             <li className="schedule__item">
                                 <span className="schedule__item-time">20:00 - 20:15</span>
                                 <i className="schedule__item-point schedule__item-point--pause">&nbsp;</i>
