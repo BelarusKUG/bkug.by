@@ -1,9 +1,10 @@
 import React from 'react';
+import DataService from '../DataService';
 
 export default class Contacts extends React.Component {
     render() {
-        const links = this.props.data.contacts.links;
-        const drivers = this.props.data.contacts.drivers;
+        const links = DataService.contacts.links;
+        const drivers = DataService.contacts.drivers;
 
         return (
             <div className="content container">

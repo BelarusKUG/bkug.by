@@ -10,16 +10,14 @@ import Home from './home/home.jsx';
 import 'normalize.css/normalize.css'
 import './style.scss'
 
-const data = require('../data.json');
-
 function main() {
     ReactDOM.render((
         <Router history={hashHistory}>
             <Route path="/" component={Wrap}>
-                <IndexRoute component={() => <Home data={data}/>} />
-                <Route path="events" component={() => <Events data={data}/>} />
-                <Route path="speakers" component={() => <Speakers data={data}/>} />
-                <Route path="contacts" component={() => <Contacts data={data}/>} />
+                <IndexRoute component={Home} />
+                <Route path="events" component={Events} />
+                <Route path="speakers" component={Speakers} />
+                <Route path="contacts" component={Contacts} />
             </Route>
             <Redirect from="/*" to="/events"/>
         </Router>

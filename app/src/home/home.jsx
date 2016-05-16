@@ -1,4 +1,5 @@
 import React from 'react';
+import DataService from '../DataService';
 
 const schedule = part => {
     return (
@@ -7,7 +8,7 @@ const schedule = part => {
             <i className="schedule__item-point">&nbsp;</i>
             <div className="schedule__item-info">
                 <h4  className="schedule__item-topic">Введение в язык и основные особенности языка</h4>
-                <small className="schedule__item-speaker">{getAuthor()}</small>
+                <small className="schedule__item-speaker">{'Author'}</small>
             </div>
         </li>
     )
@@ -61,7 +62,7 @@ export default class Home extends React.Component {
     }
 
     render() {
-        const meetup = this.props.data.meetups[0];
+        const meetup = DataService.meetups[0];
 
         return (
             <div className="content">
