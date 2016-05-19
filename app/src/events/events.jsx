@@ -18,7 +18,7 @@ export default class Events extends React.Component {
 
                     <p><a>Антон Руткевич (будет ссылка на страницу докладчиков)</a></p>
 
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4gv1pZMg4r8" frameborder="0" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4gv1pZMg4r8" frameBorder={0} allowFullScreen></iframe>
                     <iframe src="//slides.com/antonrutkevich/kotlin-intro-march-2016/embed" width="576" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
                     <p><a>Руслан Ибрагимов (будет ссылка на страницу докладчиков)</a></p>

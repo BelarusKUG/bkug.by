@@ -1,0 +1,10 @@
+links:
+  - type: youtube
+    text: YouTube Channel
+    url: https://www.youtube.com/channel/UCDjCCgjlyR7uzhH7ZyTGn4Q
+  - type: gitter
+    text: Gitter Chat
+    url: https://gitter.im/JavaBy/Kotlin
+drivers:
+  - text: Ruslan Ibragimov
+    url: mailto:ruslan@ibragimov.by

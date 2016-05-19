@@ -1,3 +1,4 @@
 # Folders to ignore
 node_modules
 .idea
+app/data.json
