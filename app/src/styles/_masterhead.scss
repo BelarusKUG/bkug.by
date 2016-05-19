@@ -1,0 +1,88 @@
+@import "variable";
+@import "mixins";
+
+/* Sidebar masthead */
+.masthead {
+  $width: 5rem;
+
+  color: $accent-contrast;
+  background-color: $accent;
+
+  @include media('>=xl') {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 25%;
+    margin-bottom: 0;
+    z-index: 2;
+  }
+
+  &-inner {
+    padding: 20px;
+
+    @include media('>=md') {
+      padding: 40px;
+    }
+
+    @include media('>=xl') {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+    }
+  }
+  .lead {
+    margin-bottom: 0;
+  }
+
+  /* Masthead content */
+  .main-title {
+    max-width: 16rem;
+    margin: 0 auto;
+
+    font-family: 'Righteous', cursive;
+    line-height: 1;
+    text-align: center;
+    opacity: .9;
+    &__belarus {
+      font-size: $width * 0.75348;
+    }
+    &__kotlin {
+      font-size: $width;
+    }
+    &__user-group {
+      font-size: $width * 0.50862;
+    }
+  }
+
+  .kotlin-cat {
+    max-width: 100%;
+    margin: 2rem 0 0 0;
+  }
+
+  /* Footer area of masthead */
+  .colophon {
+    @include media('>=xl') {
+      margin-top: 2rem;
+    }
+    &-links {
+      padding-left: 0;
+      margin: 0;
+      list-style: none;
+      color: rgba(#000, 0.45);
+      text-align: center;
+      text-transform: uppercase;
+      a {
+        color: rgb(251, 195, 107);
+        &:hover,
+        &:active {
+          text-decoration: none;
+          color: rgba(#000, 0.35);
+        }
+      }
+    }
+  }
+}
+
+
