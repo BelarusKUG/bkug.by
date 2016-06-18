@@ -5,6 +5,7 @@ import { Router, Redirect, Route, IndexRoute, Link, hashHistory } from 'react-ro
 import Speakers from './speakers/speakers.jsx';
 import Contacts from './contacts/contacts.jsx';
 import Events from './events/events.jsx';
+import Event from './events/event.jsx';
 import Wrap from './wrap/wrap.jsx';
 import Home from './home/home.jsx';
 import 'normalize.css/normalize.css'
@@ -16,6 +17,7 @@ function main() {
             <Route path="/" component={Wrap}>
                 <IndexRoute component={Home} />
                 <Route path="events" component={Events} />
+                <Route path="event/:eventId" component={Event} />
                 <Route path="speakers" component={Speakers} />
                 <Route path="contacts" component={Contacts} />
             </Route>

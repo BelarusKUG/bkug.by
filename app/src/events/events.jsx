@@ -1,4 +1,6 @@
 import React from 'react';
+import {Link} from 'react-router'
+
 
 export default class Events extends React.Component {
     render() {
@@ -7,7 +9,7 @@ export default class Events extends React.Component {
                 <h1>Events</h1>
                 <ul className="events__list">
                     <li className="events__list-item">
-                        <a href="" className="events__list-link">
+                        <Link to={`/event/1`} className="events__list-link">
                             <div className="events__teaser">
                                 <img src="http://placehold.it/200x150" alt=""/>
                             </div>
@@ -18,11 +20,12 @@ export default class Events extends React.Component {
                                     <span>place</span></p>
                                 <p className="events__desc-p">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    A accusamus accusantium, adipisci alias atque, commodi eum fugit iure libero nam natus nemo,
+                                    A accusamus accusantium, adipisci alias atque, commodi eum fugit iure libero nam
+                                    natus nemo,
                                     placeat quis quos rem repellat saepe vel voluptatem.
                                 </p>
                             </div>
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </div>
