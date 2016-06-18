@@ -5,29 +5,26 @@ export default class Events extends React.Component {
         return (
             <div className="content container">
                 <h1>Events</h1>
-
-                <div>
-                    <h2>BKUG #1</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        A accusamus accusantium, adipisci alias atque, commodi eum fugit iure libero nam natus nemo,
-                        placeat quis quos rem repellat saepe vel voluptatem.
-                    </p>
-
-                    <h3>Название доклада</h3>
-
-                    <p><a>Антон Руткевич (будет ссылка на страницу докладчиков)</a></p>
-
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4gv1pZMg4r8" frameBorder={0} allowFullScreen></iframe>
-                    <iframe src="//slides.com/antonrutkevich/kotlin-intro-march-2016/embed" width="576" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-                    <p><a>Руслан Ибрагимов (будет ссылка на страницу докладчиков)</a></p>
-
-                    <p>Полезная ссылка с доклада <a>тут</a></p>
-
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/zpIJTUXtj0A" frameborder="0" allowfullscreen></iframe>
-
-                </div>
+                <ul className="events__list">
+                    <li className="events__list-item">
+                        <a href="" className="events__list-link">
+                            <div className="events__teaser">
+                                <img src="http://placehold.it/200x150" alt=""/>
+                            </div>
+                            <div className="events__desc">
+                                <h3 className="events__title">BKUG #1</h3>
+                                <p className="events__meta">
+                                    <span>June 25, 2016 </span>,
+                                    <span>place</span></p>
+                                <p className="events__desc-p">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    A accusamus accusantium, adipisci alias atque, commodi eum fugit iure libero nam natus nemo,
+                                    placeat quis quos rem repellat saepe vel voluptatem.
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
             </div>
         );
     }

@@ -1,0 +1,45 @@
+@import "variable";
+@import "mixins";
+
+.events {
+  &__list {
+    list-style: none;
+    padding: 0;
+    &-item {
+      margin: 0 0 2rem 0;
+    }
+    &-link {
+      display: flex;
+      flex: 1;
+      flex-direction: row;
+      margin: 0;
+      padding: 0;
+      @include media('<=sm') {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  }
+  &__desc {
+    @include text;
+    &-p {
+      margin: 0;
+    }
+  }
+  &__meta {
+    @include text;
+    margin: 0;
+    font-size: 0.9rem;
+    color: $g-light;
+  }
+  &__teaser {
+    margin-right: 2rem;
+    @include media('<=sm') {
+      margin-right: 0;
+    }
+  }
+  &__title {
+    margin: 0 0 .5rem 0;
+    color: $main;
+  }
+}

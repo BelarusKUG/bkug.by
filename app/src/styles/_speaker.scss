@@ -16,6 +16,15 @@
     flex-direction: row;
     flex:1;
 
+    &--column {
+      flex-direction: column;
+      padding: 0 0 3rem 0;
+    }
+
+    &--main {
+      padding: 0;
+    }
+
     &-pic {
       width: $point *2;
       min-width: $point *2;
@@ -44,6 +53,28 @@
     }
     &-overview {
       //margin: 0;
+    }
+
+    &-social {
+      display: block;
+      cursor: pointer;
+      color: $blue;
+      &:hover {
+        color: darken($blue, 10%);
+      }
+
+      &--github{
+
+      }
+      &--twitter {
+
+      }
+      &--facebook {
+
+      }
+      &--linkedin {
+
+      }
     }
   }
 }
