@@ -16,6 +16,10 @@ var config = {
             test: /\.json$/,
             loader: "json"
         }, {
+            test: /\.ts$/,
+            exclude: /node_modules/,
+            loader: 'babel!ts'
+        }, {
             test: /\.jsx?$/,
             exclude: /node_modules/,
             loader: 'babel'

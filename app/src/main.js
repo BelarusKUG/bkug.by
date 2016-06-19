@@ -17,7 +17,7 @@ function main() {
             <Route path="/" component={Wrap}>
                 <IndexRoute component={Home} />
                 <Route path="events" component={Events} />
-                <Route path="event/:eventId" component={Event} />
+                <Route path="events/:eventId" component={Event} />
                 <Route path="speakers" component={Speakers} />
                 <Route path="contacts" component={Contacts} />
             </Route>

@@ -1,0 +1,63 @@
+{
+  "version": "v4",
+  "repo": "DefinitelyTyped/DefinitelyTyped",
+  "ref": "master",
+  "path": "typings",
+  "bundle": "typings/tsd.d.ts",
+  "installed": {
+    "webpack/webpack-env.d.ts": {
+      "commit": "c02b03f677ca88e364cfda5308c58d0832664581"
+    },
+    "webpack/webpack.d.ts": {
+      "commit": "c02b03f677ca88e364cfda5308c58d0832664581"
+    },
+    "uglify-js/uglify-js.d.ts": {
+      "commit": "c02b03f677ca88e364cfda5308c58d0832664581"
+    },
+    "source-map/source-map.d.ts": {
+      "commit": "c02b03f677ca88e364cfda5308c58d0832664581"
+    },
+    "react/react-addons-create-fragment.d.ts": {
+      "commit": "c02b03f677ca88e364cfda5308c58d0832664581"
+    },
+    "react/react.d.ts": {
+      "commit": "c02b03f677ca88e364cfda5308c58d0832664581"
+    },
+    "react/react-addons-css-transition-group.d.ts": {
+      "commit": "c02b03f677ca88e364cfda5308c58d0832664581"
+    },
+    "react/react-addons-transition-group.d.ts": {
+      "commit": "c02b03f677ca88e364cfda5308c58d0832664581"
+    },
+    "react/react-addons-linked-state-mixin.d.ts": {
+      "commit": "c02b03f677ca88e364cfda5308c58d0832664581"
+    },
+    "react/react-addons-perf.d.ts": {
+      "commit": "c02b03f677ca88e364cfda5308c58d0832664581"
+    },
+    "react/react-addons-pure-render-mixin.d.ts": {
+      "commit": "c02b03f677ca88e364cfda5308c58d0832664581"
+    },
+    "react/react-addons-shallow-compare.d.ts": {
+      "commit": "c02b03f677ca88e364cfda5308c58d0832664581"
+    },
+    "react/react-addons-test-utils.d.ts": {
+      "commit": "c02b03f677ca88e364cfda5308c58d0832664581"
+    },
+    "react/react-addons-update.d.ts": {
+      "commit": "c02b03f677ca88e364cfda5308c58d0832664581"
+    },
+    "react/react-dom.d.ts": {
+      "commit": "c02b03f677ca88e364cfda5308c58d0832664581"
+    },
+    "react/react-global.d.ts": {
+      "commit": "c02b03f677ca88e364cfda5308c58d0832664581"
+    },
+    "react-router/history.d.ts": {
+      "commit": "c02b03f677ca88e364cfda5308c58d0832664581"
+    },
+    "react-router/react-router.d.ts": {
+      "commit": "c02b03f677ca88e364cfda5308c58d0832664581"
+    }
+  }
+}

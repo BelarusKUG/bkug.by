@@ -6,5 +6,8 @@ links:
     text: Gitter Chat
     url: https://gitter.im/JavaBy/Kotlin
 drivers:
-  - text: Ruslan Ibragimov
-    url: mailto:ruslan@ibragimov.by
+  - name: Ruslan Ibragimov
+    links:
+      - type: email
+        text: ruslan@ibragimov.by
+        url: mailto:ruslan@ibragimov.by

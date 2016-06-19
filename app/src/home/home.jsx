@@ -1,5 +1,5 @@
 import React from 'react';
-import DataService from '../DataService';
+import DataService from '../DataService.ts';
 
 const schedule = part => {
   return (

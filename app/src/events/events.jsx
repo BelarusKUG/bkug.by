@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router'
-
+import DataService from '../DataService.ts';
 
 export default class Events extends React.Component {
     render() {
@@ -9,7 +9,7 @@ export default class Events extends React.Component {
                 <h1>Events</h1>
                 <ul className="events__list">
                     <li className="events__list-item">
-                        <Link to={`/event/1`} className="events__list-link">
+                        <Link to={`/events/1`} className="events__list-link">
                             <div className="events__teaser">
                                 <img src="http://placehold.it/200x150" alt=""/>
                             </div>

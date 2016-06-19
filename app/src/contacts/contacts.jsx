@@ -1,5 +1,5 @@
 import React from 'react';
-import DataService from '../DataService';
+import DataService from '../DataService.ts';
 
 export default class Contacts extends React.Component {
     render() {
