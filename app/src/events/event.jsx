@@ -1,11 +1,17 @@
 import React from 'react';
 
 export default class Event extends React.Component {
+    constructor (props) {
+        super(props);
+        this.state = { event: props.params.eventId };
+    }
+
     render() {
         return (
             <div className="content container">
 
-                <h1>BKUG #1</h1>
+                <h1>BKUG #1 {this.state.event}</h1>
+
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     A accusamus accusantium, adipisci alias atque, commodi eum fugit iure libero nam natus nemo,
