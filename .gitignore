@@ -2,3 +2,4 @@
 node_modules
 .idea
 app/data.json
+dist

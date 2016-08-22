@@ -1,6 +1,5 @@
 import React from 'react';
 import {Link} from 'react-router'
-import DataService from '../DataService.ts';
 
 export default class Events extends React.Component {
     render() {

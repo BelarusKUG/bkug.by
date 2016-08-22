@@ -1,13 +1,12 @@
-import 'babel-polyfill';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Redirect, Route, IndexRoute, Link, hashHistory } from 'react-router'
-import Speakers from './speakers/speakers.jsx';
-import Contacts from './contacts/contacts.jsx';
-import Events from './events/events.jsx';
-import Event from './events/event.jsx';
-import Wrap from './wrap/wrap.jsx';
-import Home from './home/home.jsx';
+import { Router, Redirect, Route, IndexRoute, hashHistory } from 'react-router'
+import Speakers from './speakers/speakers';
+import Contacts from './contacts/contacts';
+import Events from './events/events';
+import Event from './events/event';
+import Wrap from './wrap/wrap';
+import Home from './home/home';
 import 'normalize.css/normalize.css'
 import './style.scss'
 
