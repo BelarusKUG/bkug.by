@@ -34,6 +34,7 @@ _Присылайте ваши pull-реквесты!_
 
 ## Текущие активности
 
+- [ ] Meetup.com (Руслан)
 - [ ] Сайт BKUG.by (Руслан)
 - [ ] Видео для сайта (Алина)
 - [x] Логотип сообщества [/logo](https://github.com/KotlinBy/bkug.by/tree/master/logo)
