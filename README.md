@@ -1,3 +1,3 @@
-# Belarus Kotlin User Group [![Build Status](https://travis-ci.org/KotlinBy/bkug.by.svg?branch=master)](https://travis-ci.org/KotlinBy/bkug.by)
+# Belarus Kotlin User Group
 
-_Присылайте ваши pull-реквесты!_
+TBA

@@ -1,5 +1,2 @@
-# Folders to ignore
-node_modules
+# Intellij Idea
 .idea
-app/data.json
-dist
