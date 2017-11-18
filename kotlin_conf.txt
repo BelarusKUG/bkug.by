@@ -1,0 +1,72 @@
+https://www.kotlinconf.com/schedule/
+
+
+Keynote
+https://blog.jetbrains.com/kotlin/2017/11/kotlinconf-keynote-recap/
+https://android.github.io/kotlin-guides/
+https://github.com/jetbrains/kotlinconf-spinner
+https://github.com/jetbrains/kotlinconf-app
+https://github.com/JetBrains/kotlin-wrappers 
+
+
+Cords and Gumballs, Mike Hearn
+https://github.com/mikehearn
+https://github.com/corda/corda
+https://github.com/mikehearn/gumball
+
+
+Mutiplaform, Dmitry Jemerov
+http://kotlinlang.org/docs/reference/multiplatform.html
+https://github.com/jetbrains/kotlinconf-app
+http://jb.gg/kotlin-style-draft
+
+
+Kotlin for Data Science, Thomas Nield
+https://github.com/thomasnield/kotlinconf-datascience-talk
+http://tomstechnicalblog.blogspot.com.by/2016/10/kotlin-for-data-science.html
+
+
+Kontribute, Yoshinori Isogai
+https://photos.google.com/share/AF1QipPcpFyPQREwPFl64DVVPJphkt6HsQmi4aT5QHO6Ia5DHkizul-M7_Jtzp0cbV2G8A?key=c3RobkZlMlJzUjZrNUFmSU5IMm43WDFtRWc0cHJn
+
+
+Architectures using Functional Programming concepts, Jorge Castillo
+https://speakerdeck.com/jorgecastilloprz/kotlinconf-architectures-using-functional-programming-concepts
+
+
+kscript - Scripting Enhancements for Kotlin, Holger Brandl
+https://github.com/holgerbrandl/kscript_kotlinconf_2017
+https://holgerbrandl.github.io/kscript_kotlinconf_2017/kscript_kotlinconf.html#1
+
+
+Deep Dive into Kotlin/Native
+https://blog.jetbrains.com/kotlin/2017/11/kotlinnative-ide-support-preview/
+
+
+Generating Kotlin Code, Jake Wharton
+https://speakerdeck.com/jakewharton/generating-kotlin-code-kotlinconf-2017
+https://github.com/square/kotlinpoet
+
+
+Testing Kotlin at Scale — Spek, Artem Zinnatullin
+https://speakerdeck.com/artem_zin/testing-kotlin-at-scale-spek-number-kotlinconf2017
+
+
+Idiomatic interop, Kevin Most
+https://speakerdeck.com/kevinmost/idiomatic-interop
+
+
+Boost productivity, Marcus Fihlon
+https://speakerdeck.com/mcpringle/kotlin-ee-boost-your-productivity-at-kotlinconf-2017
+
+
+You can, but should you?, Mike Gouline
+https://mike.gouline.net/materials/2017-11-02/kotlin-ycbsy.pdf
+
+
+Cost of Kotlin, Duncan McGregor
+https://docs.google.com/presentation/d/1wYX8RvspzQVxoGTlyagNqEyFGKIaTObSSz8CjoUpMks/edit#slide=id.g291153198a_0_344
+
+
+Asynchronous programming with Kotlin coroutines in Spring, Konrad Kaminski
+https://github.com/konrad-kaminski/spring-kotlin-coroutine
