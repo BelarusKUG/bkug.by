@@ -22,7 +22,7 @@ Gradle — популярная система сборки проектов, н
 
 <img class="circle_150" src="https://bkug.by/wp-content/uploads/2017/12/siarhei_krukau.jpg" alt="Сергей Крюков" />
 
-Сергей Крюков, разработчик, [Epam](https://www.epam.com/).
+Сергей Крюков, пишет на Java чтобы оплачивать счета. Играется с Kotlin чтобы отдохнуть от этого.
 
 ### Kotlin Coroutines: Часть 2 - Руслан Ибрагимов (20:30 - 21:00)
 
