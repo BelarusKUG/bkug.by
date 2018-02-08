@@ -31,4 +31,8 @@
 
 Для участия во встрече необходима предварительная [регистрация](https://goo.gl/forms/lApULtR32N17ZZe22).
 
+Митап пройдет при поддержке [cyber • Fund](http://company.cyber.fund/). 
+
+[![cyber • Fund](https://bkug.by/wp-content/uploads/2018/02/cyber-fund.png)](http://company.cyber.fund/)
+
 [huge_it_maps id="2"]
