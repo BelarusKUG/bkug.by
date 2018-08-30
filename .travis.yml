@@ -1,15 +1,29 @@
-language: node_js
-node_js: 6
-addons:
-  ssh_known_hosts: bkug.by
-before_script:
-  - npm test
-  - openssl aes-256-cbc -K $encrypted_83630750896a_key -iv $encrypted_83630750896a_iv -in deploy@morty.enc -out ~/.ssh/deploy@morty -d
-  - chmod 600 ~/.ssh/deploy@morty
-  - eval "$(ssh-agent -s)"
-  - ssh-add ~/.ssh/deploy@morty
+sudo: required
+
+services:
+- docker
+
+language: java
+
+jdk:
+- oraclejdk10
+
 script:
-  - bash ./deploy.sh
+- ./gradlew check installDist
+- docker build -t "irus/bkug:1.0.0-dev-b${TRAVIS_BUILD_NUMBER}" ./
+
+deploy:
+  provider: script
+  script: bash docker_push.sh
+  on:
+    branch: master
+
+before_cache:
+- rm -f  "${HOME}/.gradle/caches/modules-2/modules-2.lock"
+- rm -f  "${HOME}/.gradle/caches/*/fileHashes/fileHashes.lock"
+- rm -rf "${HOME}/.gradle/caches/*/plugin-resolution/"
+
 cache:
   directories:
-  - node_modules
+  - "${HOME}/.gradle/caches/"
+  - "${HOME}/.gradle/wrapper/"
