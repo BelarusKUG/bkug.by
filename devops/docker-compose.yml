@@ -1,7 +1,7 @@
 version: "3.3"
 services:
   bkug:
-    image: irus/bkug:1.0.0-dev-b1 # get from ${TRAVIS_BUILD_NUMBER}
+    image: bkug/webapp:b1 # get from ${TRAVIS_BUILD_NUMBER}
     container_name: bkug
     restart: always
     ports:
@@ -10,10 +10,11 @@ services:
       BKUG_OPTS: ${BKUG_OPTS}
       SENTRY_DSN: ${BKUG_SENTRY_DSN}
       BKUG_ENV: ${BKUG_ENV}
+      BKUG_DATABASE_URL: ${BKUG_DATABASE_URL}
     depends_on:
     - bkug_database
   bkug_database:
-    image: postgres:10.3
+    image: postgres:10.5
     container_name: bkug_database
     restart: always
     user: "${BKUG_SYSTEM_USER}"
