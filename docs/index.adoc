@@ -2,6 +2,29 @@
 
 This documentation describes all technical aspects of running bkug.by and other software used by community.
 
+As well, as contains useful guides and checklists for speakers and organizers.
+
+<<<
+
+== Checklists
+
+=== Speaker Checklist
+
+NOTE: Organizers can print this checklist, and ask speaker to check all point right before talk
+
+- [ ] Disable Night Light/f.lux/etc
+- [ ] Close all applications that can send notifications (like messengers, browsers, etc)
+- [ ] Mute or turn off phone
+- [ ] Turn on phone after talk :)
+
+=== Speaking in other Country/City/Community
+
+- [ ] Grab some stickers to give away
+
+== Slides best practices
+
+NOTE: TODO
+
 <<<
 
 == Deployment
