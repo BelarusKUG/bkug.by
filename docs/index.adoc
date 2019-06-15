@@ -1,0 +1,49 @@
+= Belarus Kotlin User Group Documentation
+
+This documentation describes all technical aspects of running bkug.by and other software used by community.
+
+<<<
+
+== Deployment
+
+=== Domain
+
+Domain owner is Ruslan Ibragimov. If you know way to share domain ownership inside org -- tell us about it.
+
+=== Hosting
+
+Project hosted in DigitalOcean VM, account owner is Ruslan Ibragimov. This can be improved by introducing team, and moving project to shared VM.
+
+=== SSL
+
+SSL setup on production instance, https://letsencrypt.org/[Let's Encrypt] used to obtain certificate, certificate updates automatically via cron job.
+
+HTTP/HTTPS setup analyze:
+
+- https://www.ssllabs.com/ssltest/analyze.html?d=bkug.by[SSL Labs: A+]
+- https://observatory.mozilla.org/analyze/bkug.by[Mozilla Observatory]
+
+<<<
+
+== Meetup Recording
+
+We're investigating a lot of possibility of recording done by community itself. But quality recording requires money investment: hardware and professional software costs money.
+
+What we already have:
+
+. Few cameras: Sony Alpha 6300, Canon M50
+. Wireless audio systems: RØDELink Filmmaker Kit (500$), BOYA BY-WM6 (170$)
+. Speaker's Microphone: https://www.rode.com/microphones/hs2[HS2] (300$)
+
+What we need:
+
+. Scale and Frame Rate Conversion, HDMI/SDI crossconverter https://www.decimator.com/Products/MiniConverters/MD-HX/MD-HX.html[Decimator MD-HX] (300$)
+. Capture device: https://www.aja.com/products/u-tap-sdi[U-TAP SDI] (350$)
+. Capture device to capture video from camera
+. SDI Cable
+. (Optional) https://www.rode.com/wireless/wirelessgo[Wireless GO]
+
+Software:
+
+. OBS (Free)
+. (Optional) Wirecast ($$$)
