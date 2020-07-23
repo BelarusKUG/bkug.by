@@ -1,20 +1,26 @@
-sudo: required
-
-services:
-  - docker
-
 language: java
+os: linux
+dist: bionic
 
 jdk:
   - openjdk11
 
+before_install:
+  - nvm install 12
+
+install:
+  - ./gradlew assemble
+  - yarn --cwd web install
+
 script:
   - ./gradlew check installDist
+  - yarn --cwd web run build
   - docker build -t "bkug/webapp:b${TRAVIS_BUILD_NUMBER}" ./webapp
 
 deploy:
   provider: script
   script: bash devops/deploy.sh
+  skip_cleanup: true
   on:
     branch: master
 
@@ -24,6 +30,7 @@ before_cache:
   - rm -rf "${HOME}/.gradle/caches/*/plugin-resolution/"
 
 cache:
+  yarn: true
   directories:
     - "${HOME}/.gradle/caches/"
     - "${HOME}/.gradle/wrapper/"

@@ -1,4 +1,4 @@
 # Container with application
-FROM openjdk:11-jre-slim
+FROM amazoncorretto:11.0.8
 COPY /build/install/bkug /bkug
 ENTRYPOINT /bkug/bin/bkug

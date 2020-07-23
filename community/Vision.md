@@ -1,3 +1,7 @@
+bylaws
+
+preamble
+
 # Сообщество Belarus Kotlin User Group
 
 ## Цели

@@ -6,3 +6,7 @@ out
 # Gradle
 .gradle
 build
+
+# Node
+/web/node_modules/
+/site/src/main/resources/public/

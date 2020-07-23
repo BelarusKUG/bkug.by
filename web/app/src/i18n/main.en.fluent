@@ -1,0 +1,9 @@
+Position-agreement-unchecked = Confirm that you are posting a vacancy for a Kotlin developer position
+Frequency-agreement-unchecked = Confirm that you are not going to ask to publish the same vacancy more than once a month
+Title-is-required = Title is required
+Location-is-required = Location is required
+Company-is-required = Company is required
+Salary-is-required = Salary is required
+Contact-is-required = Contact is required
+Description-is-required = Description is required
+Description-max-length = The description must be less than 1500 characters. Currently it is { $length }

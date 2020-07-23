@@ -1,5 +1,9 @@
-dependencies {
-    compile(project(":common"))
+plugins {
+    id("by.bkug.plugin.jvm")
+}
 
-    compile("com.rometools:rome:${Versions.romeVersion}")
+dependencies {
+    implementation(project(":common"))
+
+    implementation("com.rometools:rome:$romeVersion")
 }

@@ -1,7 +1,9 @@
-dependencies {
-    compile(project(":common"))
+plugins {
+    id("by.bkug.plugin.jvm")
+}
 
-    compile("by.heap.calendar.yml:yml-ical:${Versions.ymlICalVersion}") {
-        exclude("org.slf4j", "slf4j-simple")
-    }
+dependencies {
+    implementation(project(":common"))
+
+    implementation(biweekly)
 }
