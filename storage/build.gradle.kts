@@ -1,5 +1,7 @@
-dependencies {
-    compile(project(":common"))
+plugins {
+    id("by.bkug.plugin.jvm")
+}
 
-    compile("io.undertow:undertow-core:${Versions.undertowVersion}")
+dependencies {
+    implementation(project(":common"))
 }

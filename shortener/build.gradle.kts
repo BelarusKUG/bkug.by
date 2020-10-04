@@ -1,3 +1,7 @@
+plugins {
+    id("by.bkug.plugin.jvm")
+}
+
 dependencies {
-    compile(project(":common"))
+    implementation(project(":common"))
 }

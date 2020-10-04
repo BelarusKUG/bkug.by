@@ -1,0 +1,5 @@
+stylesheets:
+  <% for(var i = 0; i < htmlWebpackPlugin.files.css.length; i++) { %>- "<%= htmlWebpackPlugin.files.css[i] %>"<% } %>
+scripts:
+  <% for(var i = 0; i < htmlWebpackPlugin.files.js.length; i++) { %>- "<%= htmlWebpackPlugin.files.js[i] %>"<% } %>
+

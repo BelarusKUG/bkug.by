@@ -2,6 +2,7 @@ rootProject.name = "bkug.by"
 
 include(
     "authentication",
+    "data",
     "database",
     "calendar",
     "common",
