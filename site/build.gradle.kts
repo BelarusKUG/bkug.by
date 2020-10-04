@@ -5,5 +5,6 @@ plugins {
 dependencies {
     implementation(project(":common"))
 
-    implementation("com.rometools:rome:$romeVersion")
+    implementation(undertow)
+    implementation(rome)
 }

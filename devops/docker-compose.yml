@@ -1,28 +1,23 @@
-version: "3.3"
+version: "2.4"
 services:
   bkug:
-    image: bkug/webapp:b1 # get from ${TRAVIS_BUILD_NUMBER}
-    container_name: bkug
-    restart: always
-    ports:
-    - "8091:8080"
+    image: "heapy/bkug:${BKUG_VERSION}"
+    container_name: "bkug"
+    restart: "always"
+    user: "${BKUG_SYSTEM_USER}"
+    expose:
+      - "8080"
+    volumes:
+      - bkug-data:/data
     environment:
       BKUG_OPTS: ${BKUG_OPTS}
-      SENTRY_DSN: ${BKUG_SENTRY_DSN}
       BKUG_ENV: ${BKUG_ENV}
-      BKUG_DATABASE_URL: ${BKUG_DATABASE_URL}
-    depends_on:
-    - bkug_database
-  bkug_database:
-    image: postgres:10.5
-    container_name: bkug_database
-    restart: always
-    user: "${BKUG_SYSTEM_USER}"
-    environment:
-      POSTGRES_PASSWORD: "bkug"
-      POSTGRES_USER: "bkug"
-      POSTGRES_DB: "bkug"
-    volumes:
-    - ${BKUG_DATA}/pgdata:/var/lib/postgresql/data
-    - /etc/passwd:/etc/passwd:ro
-
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/api/healthcheck"]
+      interval: 1m30s
+      timeout: 10s
+      retries: 3
+      start_period: "40s"
+volumes:
+  bkug-data:
+    driver: local

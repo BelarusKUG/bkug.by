@@ -1,9 +1,0 @@
-Position-agreement-unchecked = Подтвердите что вы публикуете вакансию на позицию Kotlin разработчика
-Frequency-agreement-unchecked = Подтвердите что вы не собираетесь просить опубликовать одну и ту же вакансию чаще чем раз в месяц
-Title-is-required = Вакансия обязательна к заполнению
-Location-is-required = Локация обязательна к заполнению
-Company-is-required = Компания обязательна к заполнению
-Salary-is-required = Зарплатная вилка обязательна к заполнению
-Contact-is-required = Контакт обязателен к заполнению
-Description-is-required = Описание обязательно к заполнению
-Description-max-length = Максимальный размер описания: 1500 символов. Текущий размер:  { $length }

@@ -8,5 +8,6 @@ out
 build
 
 # Node
-/web/node_modules/
+/web-theme/node_modules/
+/web-theme/dist/
 /site/src/main/resources/public/

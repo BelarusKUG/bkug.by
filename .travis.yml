@@ -9,17 +9,17 @@ before_install:
   - nvm install 12
 
 install:
-  - ./gradlew assemble
   - yarn --cwd web install
+  - ./gradlew assemble
 
 script:
-  - ./gradlew check installDist
   - yarn --cwd web run build
-  - docker build -t "bkug/webapp:b${TRAVIS_BUILD_NUMBER}" ./webapp
+  - ./gradlew check installDist
+  - docker build -t "heapy/bkug:b${TRAVIS_BUILD_NUMBER}" -t "heapy/bkug:latest" ./webapp
 
 deploy:
   provider: script
-  script: bash devops/deploy.sh
+  script: bash .ci/deploy.sh
   skip_cleanup: true
   on:
     branch: master
