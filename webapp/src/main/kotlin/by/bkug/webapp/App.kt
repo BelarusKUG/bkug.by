@@ -1,6 +1,7 @@
 package by.bkug.webapp
 
 import by.bkug.common.DefaultShutdownManager
+import by.bkug.shortener.URLShortenerHandler
 import io.undertow.Undertow
 import io.undertow.server.HttpHandler
 import io.undertow.server.HttpServerExchange
@@ -37,7 +38,7 @@ fun main() {
         ))
         .addPrefixPath("/auth", NoopHandler)
         .addPrefixPath("/form", NoopHandler)
-        .addPrefixPath("/to", NoopHandler)
+        .addPrefixPath("/to", URLShortenerHandler())
         .addPrefixPath("/files", NoopHandler)
         .addPrefixPath("/api", ApiHandler())
 
