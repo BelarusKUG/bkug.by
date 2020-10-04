@@ -10,6 +10,7 @@ application {
 
 dependencies {
     implementation(project(":common"))
+    implementation(project(":data"))
     implementation(project(":authentication"))
     implementation(project(":calendar"))
     implementation(project(":forms"))
@@ -18,7 +19,4 @@ dependencies {
     implementation(project(":storage"))
 
     implementation(undertow)
-
-    implementation("ch.qos.logback:logback-classic:$logbackVersion")
-    implementation("org.slf4j:jul-to-slf4j:$slf4jVersion")
 }

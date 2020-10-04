@@ -1,6 +1,10 @@
 package by.bkug.webapp
 
+import by.bkug.calendar.IcsCalendarGenerator
 import by.bkug.common.DefaultShutdownManager
+import by.bkug.data.calendar
+import by.bkug.data.internalCalendar
+import by.bkug.data.model.Calendar
 import by.bkug.shortener.URLShortenerHandler
 import io.undertow.Undertow
 import io.undertow.server.HttpHandler
@@ -10,6 +14,7 @@ import io.undertow.server.handlers.PathHandler
 import io.undertow.server.handlers.resource.ClassPathResourceManager
 import io.undertow.server.handlers.resource.PathResourceManager
 import io.undertow.server.handlers.resource.ResourceHandler
+import io.undertow.util.Headers
 import io.undertow.util.StatusCodes
 import java.nio.file.Paths
 
@@ -41,6 +46,8 @@ fun main() {
         .addPrefixPath("/to", URLShortenerHandler())
         .addPrefixPath("/files", NoopHandler)
         .addPrefixPath("/api", ApiHandler())
+        .addExactPath("/calendar.ics", CalendarHandler(calendar))
+        .addExactPath("/calendar-internal.ics", CalendarHandler(internalCalendar))
 
     val server = Undertow.builder()
         .addHttpListener(8080, "0.0.0.0")
@@ -54,6 +61,17 @@ fun main() {
     }
 
     server.start()
+}
+
+class CalendarHandler(
+    calendarData: Calendar
+) : HttpHandler {
+    private val data = IcsCalendarGenerator().generate(calendarData)
+
+    override fun handleRequest(exchange: HttpServerExchange) {
+        exchange.responseHeaders.put(Headers.CONTENT_TYPE, "text/calendar")
+        exchange.responseSender.send(data)
+    }
 }
 
 class HealthCheckHandler : HttpHandler {

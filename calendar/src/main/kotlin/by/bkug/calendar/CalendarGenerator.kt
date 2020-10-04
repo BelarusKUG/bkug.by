@@ -5,65 +5,58 @@ import biweekly.ICalVersion
 import biweekly.ICalendar
 import biweekly.component.VEvent
 import biweekly.io.TimezoneAssignment
-import biweekly.property.Geo
 import biweekly.property.Location
 import biweekly.property.Organizer
-import biweekly.util.Duration
-import java.nio.file.Path
-import java.nio.file.Paths
+import biweekly.property.Uid
+import biweekly.property.Url
+import by.bkug.data.model.Calendar
+import org.slf4j.LoggerFactory
 import java.util.Date
 import java.util.TimeZone
 
-/**
- * Generates calendar with community events.
- *
- * @author Ruslan Ibragimov
- * @since 1.0.0
- */
 interface CalendarGenerator {
-    fun generate(from: Path, to: Path)
+    fun generate(calendar: Calendar): String
 }
 
 class IcsCalendarGenerator : CalendarGenerator {
-    override fun generate(from: Path, to: Path) {
+    override fun generate(calendar: Calendar): String {
         val ical = ICalendar()
-        val event = VEvent()
-        val summary = event.setSummary("Team Meeting")
-        summary.language = "en-us"
 
         //build a TimezoneAssignment object
-        val javaTz = TimeZone.getTimeZone("America/New_York")
-        val newYork = TimezoneAssignment.download(javaTz, false)
+        val javaTz = TimeZone.getTimeZone("Europe/Minsk")
+        val minskTz = TimezoneAssignment.download(javaTz, false)
 
-        ical.timezoneInfo.defaultTimezone = newYork
+        ical.addName(calendar.name)
+        ical.url = Url(calendar.url)
+        ical.timezoneInfo.defaultTimezone = minskTz
 
-        val start = Date()
-        event.setDateStart(start)
+        calendar.events.forEach { dto ->
+            val event = VEvent()
+            event.uid = Uid(dto.id)
 
-        val duration = Duration.Builder().hours(1).build()
-        event.setDuration(duration)
+            val summary = event.setSummary(dto.name)
+            summary.language = "en-us"
 
+            event.setDateStart(Date.from(dto.start.toInstant()))
+            event.setDateEnd(Date.from(dto.end.toInstant()))
 
-        val geo = Geo(40.714623, -74.006605)
-        event.geo = geo
+            val location = Location(dto.location)
+            event.location = location
 
-        val location = Location("Room 32B")
-        event.location = location
+            val organizer = Organizer("BKUG", "team@bkug.by")
+            event.organizer = organizer
 
-        val organizer = Organizer("John Doe", "johndoe@example.com")
+            ical.addEvent(event)
+        }
 
-        event.organizer = organizer
-
-        ical.addEvent(event)
 
         val warnings = ical.validate(ICalVersion.V2_0)
-        println(warnings.toString())
+        LOGGER.warn("Validate ICS: {}", warnings.toString())
 
-        val str = Biweekly.write(ical).go() //ics
-        println(str)
+        return Biweekly.write(ical).go()
     }
-}
 
-fun main() {
-    IcsCalendarGenerator().generate(Paths.get(""), Paths.get(""))
+    companion object {
+        private val LOGGER = LoggerFactory.getLogger(IcsCalendarGenerator::class.java)
+    }
 }

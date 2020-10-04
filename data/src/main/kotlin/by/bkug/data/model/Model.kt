@@ -69,6 +69,7 @@ data class Calendar(
 )
 
 data class CalendarEvent(
+    val id: String,
     val name: String,
     val start: ZonedDateTime,
     val end: ZonedDateTime,
