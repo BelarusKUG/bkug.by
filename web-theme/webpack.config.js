@@ -74,10 +74,12 @@ Build started with following configuration:
         filename: "[name].css?[contenthash]",
         chunkFilename: "[id].css?[contenthash]"
       }),
-      new CopyWebpackPlugin([{
-        from: path.resolve(APP, "root"),
-        to: DIST
-      }]),
+      new CopyWebpackPlugin({
+        patterns: [{
+          from: path.resolve(APP, "root"),
+          to: DIST
+        }]
+      }),
       new webpack.DefinePlugin({
         "process.env": {
           "NODE_ENV": JSON.stringify(NODE_ENV)
