@@ -18,8 +18,9 @@ class BkugJvmPlugin : Plugin<Project> {
 
         val byteCodeVersion = JavaVersion.VERSION_11
 
-        tasks.withType<KotlinCompile> {
+        tasks.withType<KotlinCompile>().configureEach {
             kotlinOptions {
+                languageVersion = "1.4"
                 jvmTarget = byteCodeVersion.toString()
             }
         }

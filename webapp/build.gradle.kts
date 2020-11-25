@@ -5,7 +5,7 @@ plugins {
 
 application {
     applicationName = "bkug"
-    mainClassName = "by.bkug.webapp.AppKt"
+    mainClass.set("by.bkug.webapp.AppKt")
 }
 
 dependencies {
